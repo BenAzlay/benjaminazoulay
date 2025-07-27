@@ -4,6 +4,7 @@ import FlashstakeProject from "./FlashstakeProject";
 import ArturProject from "./ArturProject";
 import UpsideWTFProject from "./UpsideWTFProject";
 import EpochIslandProject from "./EpochIslandProject";
+import RestifyProject from "./RestifyProject";
 
 export interface ProjectContentProps {
   color: string;
@@ -17,6 +18,12 @@ interface Project {
 }
 
 const projectData: Project[] = [
+  {
+    title: "Restify",
+    logo: "/logos/Restify.png",
+    content: RestifyProject,
+    color: "#24424F",
+  },
   {
     title: "Riskophobe",
     logo: "/logos/Riskophobe.png",

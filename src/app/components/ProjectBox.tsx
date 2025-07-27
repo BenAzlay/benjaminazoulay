@@ -45,6 +45,7 @@ const ProjectBox: FC<ProjectBoxProps> = ({
           height: 96,
           borderRadius: "48px",
           borderColor: color,
+          backgroundColor: color,
         }}
       >
         <Image
