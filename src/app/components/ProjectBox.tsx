@@ -59,7 +59,7 @@ const ProjectBox: FC<ProjectBoxProps> = ({
 
       {/* Box Content */}
       <div className="mt-8 text-gray-100 text-base sm:text-lg">
-        <h3 className="text-2xl font-semibold" style={{ color }}>
+        <h3 className="text-2xl font-bold" style={{ color }}>
           {title}
         </h3>
         <Content color={color} />

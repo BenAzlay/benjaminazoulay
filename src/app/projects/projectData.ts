@@ -5,6 +5,7 @@ import ArturProject from "./ArturProject";
 import UpsideWTFProject from "./UpsideWTFProject";
 import EpochIslandProject from "./EpochIslandProject";
 import RestifyProject from "./RestifyProject";
+import StargateProject from "./StargateProject";
 
 export interface ProjectContentProps {
   color: string;
@@ -18,6 +19,12 @@ interface Project {
 }
 
 const projectData: Project[] = [
+  {
+    title: "Stargate",
+    logo: "/logos/Stargate.png",
+    content: StargateProject,
+    color: "#791B90",
+  },
   {
     title: "Restify",
     logo: "/logos/Restify.png",
