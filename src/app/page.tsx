@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRef } from "react";
 import dynamic from "next/dynamic";
 import ProjectList from "./projects/ProjectList";
