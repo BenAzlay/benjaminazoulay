@@ -36,8 +36,9 @@ const ProjectList = () => {
             title={project.title}
             image={project.logo}
             color={project.color}
-            Content={project.content}
-          />
+          >
+            <project.ContentComponent color={project.color} />
+          </ProjectBox>
         </Reorder.Item>
       ))}
     </Reorder.Group>

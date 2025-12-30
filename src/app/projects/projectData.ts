@@ -1,4 +1,3 @@
-import { FC } from "react";
 import RiskophobeProject from "./RiskophobeProject";
 import FlashstakeProject from "./FlashstakeProject";
 import ArturProject from "./ArturProject";
@@ -15,50 +14,50 @@ interface Project {
   title: string;
   color: string;
   logo: string;
-  content: FC<ProjectContentProps>;
+  ContentComponent: React.ComponentType<ProjectContentProps>;
 }
 
 const projectData: Project[] = [
   {
     title: "Stargate",
     logo: "/logos/Stargate.png",
-    content: StargateProject,
+    ContentComponent: StargateProject,
     color: "#791B90",
   },
-  {
+  { 
     title: "Restify",
     logo: "/logos/Restify.png",
-    content: RestifyProject,
+    ContentComponent: RestifyProject,
     color: "#24424F",
   },
   {
     title: "Riskophobe",
     logo: "/logos/Riskophobe.png",
-    content: RiskophobeProject,
+    ContentComponent: RiskophobeProject,
     color: "#6B46C1",
   },
   {
     title: "Flashstake",
     logo: "/logos/Flashstake.png",
-    content: FlashstakeProject,
+    ContentComponent: FlashstakeProject,
     color: "#FE0094",
   },
   {
     title: "EpochIsland",
     logo: "/logos/Epoch.png",
-    content: EpochIslandProject,
+    ContentComponent: EpochIslandProject,
     color: "#F1F1F1",
   },
   {
     title: "Artur.ai",
     logo: "/logos/Artur.png",
-    content: ArturProject,
+    ContentComponent: ArturProject,
     color: "#3C6AF6",
   },
   {
     title: "Upside",
     logo: "/logos/Upside.png",
-    content: UpsideWTFProject,
+    ContentComponent: UpsideWTFProject,
     color: "rgb(149, 255, 217)",
   },
 ];

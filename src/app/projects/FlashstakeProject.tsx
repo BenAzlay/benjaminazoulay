@@ -1,8 +1,8 @@
-import { FC } from "react";
+
 import { ProjectContentProps } from "./projectData";
 
-const FlashstakeProject: FC<ProjectContentProps> = ({ color }) => {
-  return (
+const FlashstakeProject = ({ color }: ProjectContentProps) => {
+  return ( 
     <div className="text-start space-y-6 font-medium">
       <div>
         <h4 style={{ color }} className="box-section-title">
@@ -47,5 +47,4 @@ const FlashstakeProject: FC<ProjectContentProps> = ({ color }) => {
     </div>
   );
 };
-
 export default FlashstakeProject;

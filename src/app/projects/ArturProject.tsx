@@ -1,7 +1,6 @@
-import { FC } from "react";
 import { ProjectContentProps } from "./projectData";
 
-const ArturProject: FC<ProjectContentProps> = ({ color }) => {
+const ArturProject = ({ color }: ProjectContentProps) => {
   return (
     <div className="text-start space-y-6 font-medium">
       <div>

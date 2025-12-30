@@ -1,25 +1,24 @@
 import Image from "next/image";
-import { FC } from "react";
 import {
   motion
 } from "framer-motion";
-import projectData, { ProjectContentProps } from "../projects/projectData";
+import projectData from "../projects/projectData";
 
 interface ProjectBoxProps {
   title: string;
   image: string;
   color: string;
-  Content: FC<ProjectContentProps>;
+  children: React.ReactNode;
   index: number;
 }
 
-const ProjectBox: FC<ProjectBoxProps> = ({
+const ProjectBox = ({
   index,
   title,
   image,
   color,
-  Content,
-}) => {
+  children,
+}: ProjectBoxProps) => {
   const isFirst: boolean = index > 0;
   const isLast: boolean = index < projectData.length - 1;
 
@@ -62,7 +61,7 @@ const ProjectBox: FC<ProjectBoxProps> = ({
         <h3 className="text-2xl font-bold" style={{ color }}>
           {title}
         </h3>
-        <Content color={color} />
+        {children}
       </div>
 
       {/* Semi-Circular Cutout */}

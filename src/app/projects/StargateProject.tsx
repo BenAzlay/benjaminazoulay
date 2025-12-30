@@ -1,7 +1,6 @@
-import { FC } from "react";
 import { ProjectContentProps } from "./projectData";
 
-const RiskophobeProject: FC<ProjectContentProps> = ({ color }) => {
+const StargateProject = ({ color }: ProjectContentProps) => {
   return (
     <div className="text-start space-y-6 font-medium text-inherit">
       <div>
@@ -51,4 +50,4 @@ const RiskophobeProject: FC<ProjectContentProps> = ({ color }) => {
   );
 };
 
-export default RiskophobeProject;
+export default StargateProject;

@@ -1,6 +1,4 @@
-import React from "react";
-
-const EmailButton: React.FC = () => {
+const EmailButton = () => {
   const email = "ping@benjaminazoulay.com";
   const subject = encodeURIComponent("Ping, let's connect!");
   const body = encodeURIComponent(

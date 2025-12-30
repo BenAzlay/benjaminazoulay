@@ -1,7 +1,6 @@
-import { FC } from "react";
 import { ProjectContentProps } from "./projectData";
 
-const UpsideWTFProject: FC<ProjectContentProps> = ({ color }) => {
+const UpsideWTFProject = ({ color }: ProjectContentProps) => {
   return (
     <div className="text-start space-y-6 font-medium">
       <div>
