@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import ProjectList from "./projects/ProjectList";
 import EmailButton from "./components/EmailButton";
 import useIsMobile from "./useIsMobile";
+import SolarSystem from "./components/SolarSystem";
 
 const ScrollWidget = dynamic(() => import("./components/ScrollWidget"), {
   ssr: false,
@@ -20,66 +21,7 @@ export default function Home() {
       id="intro-section"
       className="min-h-screen px-4 flex flex-col items-center justify-center text-center gap-6 bg-gradient-to-br from-red-900 to-gray-800 "
     >
-      <div className="relative w-48 h-48">
-        <Image
-          src="/PFP.jpg"
-          alt="PFP"
-          fill
-          objectFit="cover"
-          className="rounded-full transition-opacity duration-500 hover:opacity-0"
-        />
-        <Image
-          src="/PFP_Laser.png"
-          alt="PFP Hover"
-          fill
-          objectFit="cover"
-          className="rounded-full absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100"
-        />
-      </div>
-      <div className="justify-items-center space-y-4">
-        <h1 className="text-2xl sm:text-5xl font-bold text-white">
-          Who is Benjamin Azoulay?
-        </h1>
-        <h2 className=" text-gray-200 font-semibold max-w-lg">
-          A bird, a plane, a Web3 Full-Stack Engineer? Let&lsquo;s find out!
-        </h2>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 justify-items-center font-medium text-lg">
-        <a
-          className="bullet-link"
-          href="https://github.com/BenAzlay"
-          target="_blank"
-        >
-          <Image src="/logos/Github.png" alt="Github" width={24} height={24} />
-          <span className="label">Github</span>
-        </a>
-        <a
-          className="bullet-link"
-          href="https://www.linkedin.com/in/benjaminazoulay1"
-          target="_blank"
-        >
-          <Image
-            src="/logos/LinkedIn.png"
-            alt="LinkedIn"
-            width={24}
-            height={24}
-          />
-          <span className="label">LinkedIn</span>
-        </a>
-        <a
-          className="bullet-link"
-          href="https://blog.benjaminazoulay.com/"
-          target="_blank"
-        >
-          <Image
-            src="/logos/Hashnode.png"
-            alt="Hashnode"
-            width={24}
-            height={24}
-          />{" "}
-          <span className="label">Tutorials</span>
-        </a>
-      </div>
+      <SolarSystem />
       <ScrollWidget projectsSectionRef={projectsSectionRef} />
     </div>
   );
