@@ -47,7 +47,7 @@ export default function Home() {
     <div className="bg-red-900 rounded-t-2xl p-6 text-center space-y-4 z-50 gap-2 flex flex-col items-center sticky">
       <p className="text-xl font-bold -mb-4">Interested in working together?</p>
       <EmailButton />
-      <p>Copyright © Benjamin Azoulay 2025</p>
+      <p>Copyright © Benjamin Azoulay {new Date().getFullYear()}</p>
     </div>
   );
 
