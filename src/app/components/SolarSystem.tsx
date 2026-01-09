@@ -88,6 +88,8 @@ const Planet = ({ planet, index }: PlanetProps) => {
 };
 
 const SolarSystem = () => {
+    const [showLaser, setShowLaser] = useState(false);
+
     return (
         <div className="relative w-full h-full flex items-center justify-center py-24 my-24 perspective-1000">
             {/* Center Sun */}
@@ -95,20 +97,22 @@ const SolarSystem = () => {
                 className="relative z-20 flex flex-col items-center justify-center w-24 h-24 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-red-900 to-gray-800 border border-red-800/40 hover:border-red-800 shadow-[0_0_60px_-15px_rgba(239,68,68,0.3)] backdrop-blur-sm group"
                 whileHover={{ scale: 1.1, boxShadow: '0 0 80px -10px rgba(255, 51, 0, 0.5)' }}
                 data-clickable="true"
+                onClick={() => setShowLaser(!showLaser)}
+                onMouseLeave={() => setShowLaser(false)}
             >
                 <Image
                     src="/PFP.jpg"
                     alt="PFP"
                     fill
                     objectFit="cover"
-                    className="rounded-full transition-opacity duration-500 hover:opacity-0"
+                    className={`rounded-full transition-opacity duration-500 ${showLaser ? 'opacity-0' : 'opacity-100'}`}
                 />
                 <Image
                     src="/PFP_Laser.png"
                     alt="PFP Hover"
                     fill
                     objectFit="cover"
-                    className="rounded-full absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100"
+                    className={`rounded-full absolute top-0 left-0 transition-opacity duration-500 ${showLaser ? 'opacity-100' : 'opacity-0'}`}
                 />
             </motion.div>
 
