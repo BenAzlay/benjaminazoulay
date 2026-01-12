@@ -1,4 +1,5 @@
 import { ProjectContentProps } from "./projectData";
+import ProjectLink from "../components/ProjectLink";
 
 const StargateProject = ({ color }: ProjectContentProps) => {
   return (
@@ -29,22 +30,16 @@ const StargateProject = ({ color }: ProjectContentProps) => {
         </ul>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-start lg:justify-items-center">
-        <a
-          className="bullet-link"
+        <ProjectLink
           href="https://stargate.vechain.org/"
-          target="_blank"
-        >
-          <span>👀</span>
-          <span className="label">Learn more</span>
-        </a>
-        <a
-          className="bullet-link"
+          icon="👀"
+          label="Learn more"
+        />
+        <ProjectLink
           href="https://app.stargate.vechain.org/"
-          target="_blank"
-        >
-          <span>🌐</span>
-          <span className="label">Visit Stargate dApp</span>
-        </a>
+          icon="🌐"
+          label="Visit Stargate dApp"
+        />
       </div>
     </div>
   );

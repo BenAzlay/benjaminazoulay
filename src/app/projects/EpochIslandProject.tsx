@@ -1,4 +1,5 @@
 import { ProjectContentProps } from "./projectData";
+import ProjectLink from "../components/ProjectLink";
 
 const EpochIslandProject = ({ color }: ProjectContentProps) => {
   return (
@@ -25,14 +26,11 @@ const EpochIslandProject = ({ color }: ProjectContentProps) => {
         </ul>
       </div>
       <div className="text-center">
-        <a
-          className="bullet-link"
+        <ProjectLink
           href="https://epochisland.io"
-          target="_blank"
-        >
-          <span>🌐</span>
-          <span className="label">Visit EpochIsland.io</span>
-        </a>
+          icon="🌐"
+          label="Visit EpochIsland.io"
+        />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { ProjectContentProps } from "./projectData";
+import ProjectLink from "../components/ProjectLink";
 
 const ArturProject = ({ color }: ProjectContentProps) => {
   return (
@@ -29,10 +30,11 @@ const ArturProject = ({ color }: ProjectContentProps) => {
         </ul>
       </div>
       <div className="text-center">
-        <a className="bullet-link" href="https://artur.ai" target="_blank">
-          <span>🌐</span>
-          <span className="label">Visit Artur.ai</span>
-        </a>
+        <ProjectLink
+          href="https://artur.ai"
+          icon="🌐"
+          label="Visit Artur.ai"
+        />
       </div>
     </div>
   );

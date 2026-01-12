@@ -1,4 +1,5 @@
 import { ProjectContentProps } from "./projectData";
+import ProjectLink from "../components/ProjectLink";
 
 const RiskophobeProject = ({ color }: ProjectContentProps) => {
   return (
@@ -36,38 +37,26 @@ const RiskophobeProject = ({ color }: ProjectContentProps) => {
         humble servant), and <b>100% open-source</b> 🤗
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-start lg:justify-items-center">
-        <a
-          className="bullet-link"
+        <ProjectLink
           href="https://riskophobe.com"
-          target="_blank"
-        >
-          <span>🌐</span>
-          <span className="label">Visit Riskophobe.com</span>
-        </a>
-        <a
-          className="bullet-link"
+          icon="🌐"
+          label="Visit Riskophobe.com"
+        />
+        <ProjectLink
           href="https://github.com/BenAzlay/riskophobe-frontend"
-          target="_blank"
-        >
-          <span>👀</span>
-          <span className="label">Fontend code</span>
-        </a>
-        <a
-          className="bullet-link"
+          icon="👀"
+          label="Fontend code"
+        />
+        <ProjectLink
           href="https://github.com/BenAzlay/riskophobe-contracts"
-          target="_blank"
-        >
-          <span>🧠</span>
-          <span className="label">Contracts code</span>
-        </a>
-        <a
-          className="bullet-link"
+          icon="🧠"
+          label="Contracts code"
+        />
+        <ProjectLink
           href="https://github.com/BenAzlay/riskophobe-backend"
-          target="_blank"
-        >
-          <span>🍑</span>
-          <span className="label">Backend code</span>
-        </a>
+          icon="🍑"
+          label="Backend code"
+        />
       </div>
     </div>
   );

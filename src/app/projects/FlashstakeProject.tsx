@@ -1,5 +1,6 @@
 
 import { ProjectContentProps } from "./projectData";
+import ProjectLink from "../components/ProjectLink";
 
 const FlashstakeProject = ({ color }: ProjectContentProps) => {
   return ( 
@@ -39,10 +40,11 @@ const FlashstakeProject = ({ color }: ProjectContentProps) => {
         </ul>
       </div>
       <div className="text-center">
-        <a className="bullet-link" href="https://flashstake.io" target="_blank">
-          <span>🌐</span>
-          <span className="label">Visit Flashstake.io</span>
-        </a>
+        <ProjectLink
+          href="https://flashstake.io"
+          icon="🌐"
+          label="Visit Flashstake.io"
+        />
       </div>
     </div>
   );

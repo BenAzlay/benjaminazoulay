@@ -82,7 +82,7 @@ const Planet = ({ planet, index }: PlanetProps) => {
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           className="w-6 h-6 md:w-10 md:h-10 rounded-full flex items-center justify-center bg-transparent md:bg-black/50 md:border border-white/20 hover:border-red-800/40"
         >
-          <Image src={planet.image} alt={planet.name} width={20} height={20} />
+          <Image src={planet.image} alt={planet.name} width={20} height={20} draggable={false} />
         </motion.div>
       </div>
     </div>
@@ -155,6 +155,7 @@ const SolarSystem = () => {
             fill
             objectFit="cover"
             className="rounded-full"
+            draggable={false}
           />
         </div>
 

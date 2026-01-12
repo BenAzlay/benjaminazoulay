@@ -1,4 +1,5 @@
 import { ProjectContentProps } from "./projectData";
+import ProjectLink from "../components/ProjectLink";
 
 const UpsideWTFProject = ({ color }: ProjectContentProps) => {
   return (
@@ -32,10 +33,11 @@ const UpsideWTFProject = ({ color }: ProjectContentProps) => {
         </ul>
       </div>
       <div className="text-center">
-        <a className="bullet-link" href="https://upside.wtf" target="_blank">
-          <span>🌐</span>
-          <span className="label">Visit Upside.wtf</span>
-        </a>
+        <ProjectLink
+          href="https://upside.wtf"
+          icon="🌐"
+          label="Visit Upside.wtf"
+        />
       </div>
     </div>
   );
