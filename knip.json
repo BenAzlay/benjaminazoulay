@@ -1,0 +1,8 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": ["src/app/**/*.{ts,tsx}"],
+  "project": ["src/**/*.{ts,tsx}"],
+  "ignore": ["node_modules/**", ".next/**", "out/**"],
+  "ignoreDependencies": ["autoprefixer", "eslint-config-next", "postcss-load-config"],
+  "ignoreExportsUsedInFile": true
+}
