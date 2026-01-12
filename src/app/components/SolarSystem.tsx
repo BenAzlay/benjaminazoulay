@@ -156,6 +156,8 @@ const SolarSystem = () => {
             objectFit="cover"
             className="rounded-full"
             draggable={false}
+            sizes="(max-width: 768px) 96px, 160px"
+            fetchPriority="high"
           />
         </div>
 
