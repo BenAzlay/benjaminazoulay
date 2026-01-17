@@ -53,7 +53,7 @@ const RiskophobeProject = ({ color }: ProjectContentProps) => {
           label="Contracts code"
         />
         <ProjectLink
-          href="https://github.com/BenAzlay/riskophobe-backend"
+          href="https://github.com/BenAzlay/riskophobe-subgraph"
           icon="🍑"
           label="Backend code"
         />
