@@ -14,6 +14,7 @@ const ScrollWidget = dynamic(() => import("./components/ScrollWidget"), {
 export default function Home() {
   const isMobile = useIsMobile();
   const projectsSectionRef = useRef<HTMLDivElement>(null);
+  const currentYear = new Date().getFullYear();
 
   const introSection = () => (
     <div
@@ -47,7 +48,7 @@ export default function Home() {
     <div className="bg-red-900 rounded-t-2xl p-6 text-center space-y-4 z-50 gap-2 flex flex-col items-center sticky">
       <p className="text-xl font-bold -mb-4">Interested in working together?</p>
       <EmailButton />
-      <p>Copyright © Benjamin Azoulay {new Date().getFullYear()}</p>
+      <p>Copyright © Benjamin Azoulay {currentYear}</p>
     </div>
   );
 
