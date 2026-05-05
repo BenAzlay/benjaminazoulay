@@ -20,11 +20,11 @@ const StargateProject = ({ color }: ProjectContentProps) => {
         </h4>
         <ul className="list-disc list-inside">
           <li>
-            📱 Frontend:{" "}
+            Frontend:{" "}
             <span className="font-bold">Vite + Chakra UI + VeChain kit</span>
           </li>
           <li>
-            🧠 Smart contracts:{" "}
+            Smart contracts:{" "}
             <span className="font-bold">Solidity</span>
           </li>
         </ul>
@@ -32,13 +32,13 @@ const StargateProject = ({ color }: ProjectContentProps) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-start lg:justify-items-center">
         <ProjectLink
           href="https://stargate.vechain.org/"
-          icon="👀"
           label="Learn more"
+          color={color}
         />
         <ProjectLink
           href="https://app.stargate.vechain.org/"
-          icon="🌐"
           label="Visit Stargate dApp"
+          color={color}
         />
       </div>
     </div>

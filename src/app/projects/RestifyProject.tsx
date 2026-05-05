@@ -20,24 +20,24 @@ const RestifyProject = ({ color }: ProjectContentProps) => {
         </h4>
         <ul className="list-disc list-inside">
           <li>
-            📱 Frontend:{" "}
+            Frontend:{" "}
             <span className="font-bold">React Native + Expo</span>
           </li>
           <li>
-            🍑 Backend: <span className="font-bold">Nest.js + Prisma</span>
+            Backend: <span className="font-bold">Nest.js + Prisma</span>
           </li>
         </ul>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-start lg:justify-items-center">
         <ProjectLink
           href="https://restifyapp.org"
-          icon="👀"
           label="Learn more"
+          color={color}
         />
         <ProjectLink
           href="https://play.google.com/store/apps/details?id=com.restify"
-          icon="▶️"
           label="Download on the Play Store"
+          color={color}
         />
       </div>
     </div>

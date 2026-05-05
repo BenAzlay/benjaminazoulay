@@ -12,7 +12,7 @@ const UpsideWTFProject = ({ color }: ProjectContentProps) => {
           Upside is a dApp to tokenize tweets and bet on bangers. It is like a
           blend between pump.fun, Reddit, and Polymarket.
         </p>
-        <p>The dApp is currently still in its private beta launching phase 🚀</p>
+        <p>The dApp is currently still in its private beta launching phase.</p>
       </div>
       <div>
         <h4 style={{ color }} className="box-section-title">
@@ -20,14 +20,14 @@ const UpsideWTFProject = ({ color }: ProjectContentProps) => {
         </h4>
         <ul className="list-disc list-inside">
           <li>
-            🎮 Frontend:{" "}
+            Frontend:{" "}
             <span className="font-bold">React.js + MaterialUI</span>
           </li>
           <li>
-            🍑 Backend: <span className="font-bold">GraphQL</span>
+            Backend: <span className="font-bold">GraphQL</span>
           </li>
           <li>
-            🧠 Smart contracts:{" "}
+            Smart contracts:{" "}
             <span className="font-bold">Solidity + Hardhat</span>
           </li>
         </ul>
@@ -35,8 +35,8 @@ const UpsideWTFProject = ({ color }: ProjectContentProps) => {
       <div className="text-center">
         <ProjectLink
           href="https://upside.wtf"
-          icon="🌐"
           label="Visit Upside.wtf"
+          color={color}
         />
       </div>
     </div>

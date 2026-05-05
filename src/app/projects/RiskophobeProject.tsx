@@ -20,14 +20,14 @@ const RiskophobeProject = ({ color }: ProjectContentProps) => {
         </h4>
         <ul className="list-disc list-inside">
           <li>
-            🎮 Frontend:{" "}
+            Frontend:{" "}
             <span className="font-bold">Next.js + TailwindCSS + Wagmi</span>
           </li>
           <li>
-            🍑 Backend: <span className="font-bold">GraphQL</span>
+            Backend: <span className="font-bold">GraphQL</span>
           </li>
           <li>
-            🧠 Smart contracts:{" "}
+            Smart contracts:{" "}
             <span className="font-bold">Solidity + Hardhat</span>
           </li>
         </ul>
@@ -39,23 +39,23 @@ const RiskophobeProject = ({ color }: ProjectContentProps) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-start lg:justify-items-center">
         <ProjectLink
           href="https://riskophobe.com"
-          icon="🌐"
           label="Visit Riskophobe.com"
+          color={color}
         />
         <ProjectLink
           href="https://github.com/BenAzlay/riskophobe-frontend"
-          icon="👀"
           label="Fontend code"
+          color={color}
         />
         <ProjectLink
           href="https://github.com/BenAzlay/riskophobe-contracts"
-          icon="🧠"
           label="Contracts code"
+          color={color}
         />
         <ProjectLink
           href="https://github.com/BenAzlay/riskophobe-subgraph"
-          icon="🍑"
           label="Backend code"
+          color={color}
         />
       </div>
     </div>

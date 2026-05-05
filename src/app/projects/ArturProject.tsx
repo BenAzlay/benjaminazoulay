@@ -21,19 +21,19 @@ const ArturProject = ({ color }: ProjectContentProps) => {
         </h4>
         <ul className="list-disc list-inside">
           <li>
-            🎮 Frontend:{" "}
+            Frontend:{" "}
             <span className="font-bold">React.js + TailwindCSS</span>
           </li>
           <li>
-            🍑 Backend: <span className="font-bold">Django + MongoDB</span>
+            Backend: <span className="font-bold">Django + MongoDB</span>
           </li>
         </ul>
       </div>
       <div className="text-center">
         <ProjectLink
           href="https://artur.ai"
-          icon="🌐"
           label="Visit Artur.ai"
+          color={color}
         />
       </div>
     </div>

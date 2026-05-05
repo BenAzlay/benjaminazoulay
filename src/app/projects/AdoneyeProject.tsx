@@ -21,15 +21,15 @@ const AdoneyeProject = ({ color }: ProjectContentProps) => {
         </h4>
         <ul className="list-disc list-inside">
           <li>
-            🎮 Frontend:{" "}
+            Frontend:{" "}
             <span className="font-bold">Next.js + TailwindCSS + Wagmi</span>
           </li>
           <li>
-            🔗 Blockchain data:{" "}
+            Blockchain data:{" "}
             <span className="font-bold">Zerion + Alchemy</span>
           </li>
           <li>
-            🤖 LLM: <span className="font-bold">OpenAI</span>
+            LLM: <span className="font-bold">OpenAI</span>
           </li>
         </ul>
       </div>
@@ -40,13 +40,13 @@ const AdoneyeProject = ({ color }: ProjectContentProps) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 justify-items-start lg:justify-items-center">
         <ProjectLink
           href="https://adoneye.com"
-          icon="🌐"
           label="Visit Adoneye.com"
+          color={color}
         />
         <ProjectLink
           href="https://github.com/BenAzlay/adoneye"
-          icon="👀"
           label="Source code"
+          color={color}
         />
       </div>
     </div>

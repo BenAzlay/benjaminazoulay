@@ -12,13 +12,13 @@ const FlashstakeProject = ({ color }: ProjectContentProps) => {
         <p>
           Flashstake is a staking protocol that lets you &quot;time
           travel&quot; your yield, instantly earning rewards upfront with fixed
-          yield ⚡
+          yield
         </p>
         <p>
-          Reached over <b>$40M market cap</b> and <b>$20M TVL</b> 🤯
+          Reached over <b>$40M market cap</b> and <b>$20M TVL</b>
         </p>
         <p>
-          Offered up to <b>90% staking APY</b> 🤑
+          Offered up to <b>90% staking APY</b>
         </p>
       </div>
       <div>
@@ -27,14 +27,14 @@ const FlashstakeProject = ({ color }: ProjectContentProps) => {
         </h4>
         <ul className="list-disc list-inside">
           <li>
-            🎮 Frontend:{" "}
+            Frontend:{" "}
             <span className="font-bold">React.js + MaterialUI + Web3Auth</span>
           </li>
           <li>
-            🍑 Backend: <span className="font-bold">GraphQL</span>
+            Backend: <span className="font-bold">GraphQL</span>
           </li>
           <li>
-            🧠 Smart contracts:{" "}
+            Smart contracts:{" "}
             <span className="font-bold">Solidity + Hardhat</span>
           </li>
         </ul>
@@ -42,8 +42,8 @@ const FlashstakeProject = ({ color }: ProjectContentProps) => {
       <div className="text-center">
         <ProjectLink
           href="https://flashstake.io"
-          icon="🌐"
           label="Visit Flashstake.io"
+          color={color}
         />
       </div>
     </div>

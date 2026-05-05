@@ -23,7 +23,7 @@ const projectData: Project[] = [
     title: "Stargate",
     logo: "/logos/Stargate.png",
     ContentComponent: StargateProject,
-    color: "#791B90",
+    color: "#C050E0",
   },
   { 
     title: "Restify",
@@ -41,7 +41,7 @@ const projectData: Project[] = [
     title: "Riskophobe",
     logo: "/logos/Riskophobe.png",
     ContentComponent: RiskophobeProject,
-    color: "#6B46C1",
+    color: "#9B6DEB",
   },
   {
     title: "Flashstake",
