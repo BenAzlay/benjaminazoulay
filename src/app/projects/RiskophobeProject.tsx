@@ -33,8 +33,8 @@ const RiskophobeProject = ({ color }: ProjectContentProps) => {
         </ul>
       </div>
       <p>
-        The best part? It&lsquo;s <b>100% made by Benjamin Azoulay</b> (your
-        humble servant), and <b>100% open-source</b> 🤗
+        Built end-to-end by <b>Benjamin Azoulay</b>, Adoneye is{" "}
+        <b>100% open-source</b>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-start lg:justify-items-center">
         <ProjectLink

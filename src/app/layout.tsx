@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Benjamin Azoulay | Web3 Full-Stack Engineer",
-  description: "Benjamin Azoulay is a Frontend, Backend and Blockchain Developer",
+  description:
+    "Benjamin Azoulay is a Frontend, Backend and Blockchain Developer",
   keywords:
     "Benjamin Azoulay, web3 developer, full-stack, web3, engineer, ethereum developer",
   metadataBase: new URL("https://benjaminazoulay.com"),

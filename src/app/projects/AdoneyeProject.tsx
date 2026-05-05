@@ -10,10 +10,9 @@ const AdoneyeProject = ({ color }: ProjectContentProps) => {
         </h4>
         <p>
           Adoneye is an AI-powered crypto portfolio analysis tool that gives you
-          deep, actionable insights into your EVM wallet. Connect a wallet address
-          and let the AI engine analyze your token balances, DeFi positions,
-          historical performance, and risk
-          exposure.
+          deep, actionable insights into your EVM wallet. Connect a wallet
+          address and let the AI engine analyze your token balances, DeFi
+          positions, historical performance, and risk exposure.
         </p>
       </div>
       <div>
@@ -36,7 +35,7 @@ const AdoneyeProject = ({ color }: ProjectContentProps) => {
       </div>
       <p>
         Built end-to-end by <b>Benjamin Azoulay</b>, Adoneye is{" "}
-        <b>100% open-source</b> 🤗
+        <b>100% open-source</b>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 justify-items-start lg:justify-items-center">
         <ProjectLink
