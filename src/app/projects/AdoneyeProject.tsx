@@ -25,6 +25,9 @@ const AdoneyeProject = ({ color }: ProjectContentProps) => {
             <span className="font-bold">Next.js + TailwindCSS + Wagmi</span>
           </li>
           <li>
+            Backend: <span className="font-bold">Go</span>
+          </li>
+          <li>
             Blockchain data:{" "}
             <span className="font-bold">Zerion + Alchemy</span>
           </li>
