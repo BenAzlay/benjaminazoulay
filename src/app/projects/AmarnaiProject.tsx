@@ -6,10 +6,10 @@ const AmarnaiProject = ({ color }: ProjectContentProps) => {
     <div className="text-start space-y-6 font-medium text-inherit">
       <div>
         <h4 style={{ color }} className="box-section-title">
-          Inbox zero, on autopilot.
+          Stop sorting email. Sort it once.
         </h4>
         <p>
-          Email overload is the norm. Amarnai connects to your Gmail and uses AI to
+          Amarnai connects to your Gmail and uses an AI agent to
           automatically sort and classify threads—clearing your backlog and handling
           incoming mail in real time. Open-source and self-hostable, or available as a
           managed SaaS.
