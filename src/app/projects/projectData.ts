@@ -5,7 +5,6 @@ import UpsideWTFProject from "./UpsideWTFProject";
 import EpochIslandProject from "./EpochIslandProject";
 import RestifyProject from "./RestifyProject";
 import StargateProject from "./StargateProject";
-import AdoneyeProject from "./AdoneyeProject";
 
 export interface ProjectContentProps {
   color: string;
@@ -30,12 +29,6 @@ const projectData: Project[] = [
     logo: "/logos/Restify.png",
     ContentComponent: RestifyProject,
     color: "#4A8FA8",
-  },
-   {
-    title: "Adoneye",
-    logo: "/logos/Adoneye.png",
-    ContentComponent: AdoneyeProject,
-    color: "#f7931a",
   },
   {
     title: "Riskophobe",
