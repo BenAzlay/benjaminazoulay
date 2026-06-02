@@ -1,3 +1,4 @@
+import AmarnaiProject from "./AmarnaiProject";
 import RiskophobeProject from "./RiskophobeProject";
 import FlashstakeProject from "./FlashstakeProject";
 import ArturProject from "./ArturProject";
@@ -14,10 +15,20 @@ interface Project {
   title: string;
   color: string;
   logo: string;
+  logoSize?: number;
+  logoRounded?: boolean;
   ContentComponent: React.ComponentType<ProjectContentProps>;
 }
 
 const projectData: Project[] = [
+  {
+    title: "Amarnai",
+    logo: "/logos/Amarnai.png",
+    logoSize: 64,
+    logoRounded: false,
+    ContentComponent: AmarnaiProject,
+    color: "#F8F5EF",
+  },
   {
     title: "Stargate",
     logo: "/logos/Stargate.png",

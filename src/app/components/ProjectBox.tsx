@@ -7,6 +7,8 @@ import projectData from "../projects/projectData";
 interface ProjectBoxProps {
   title: string;
   image: string;
+  logoSize?: number;
+  logoRounded?: boolean;
   color: string;
   children: React.ReactNode;
   index: number;
@@ -16,6 +18,8 @@ const ProjectBox = ({
   index,
   title,
   image,
+  logoSize = 96,
+  logoRounded = true,
   color,
   children,
 }: ProjectBoxProps) => {
@@ -50,9 +54,9 @@ const ProjectBox = ({
         <Image
           src={image}
           alt={`${title} logo`}
-          width={96}
-          height={96}
-          className="rounded-full"
+          width={logoSize}
+          height={logoSize}
+          className={logoRounded ? "rounded-full" : ""}
           draggable={false}
         />
       </div>

@@ -35,6 +35,8 @@ const ProjectList = () => {
             index={index}
             title={project.title}
             image={project.logo}
+            logoSize={project.logoSize}
+            logoRounded={project.logoRounded}
             color={project.color}
           >
             <project.ContentComponent color={project.color} />
