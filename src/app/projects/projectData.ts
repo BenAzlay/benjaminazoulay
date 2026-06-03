@@ -2,7 +2,6 @@ import AmarnaiProject from "./AmarnaiProject";
 import RiskophobeProject from "./RiskophobeProject";
 import FlashstakeProject from "./FlashstakeProject";
 import ArturProject from "./ArturProject";
-import UpsideWTFProject from "./UpsideWTFProject";
 import EpochIslandProject from "./EpochIslandProject";
 import RestifyProject from "./RestifyProject";
 import StargateProject from "./StargateProject";
@@ -64,13 +63,7 @@ const projectData: Project[] = [
     logo: "/logos/Artur.png",
     ContentComponent: ArturProject,
     color: "#3C6AF6",
-  },
-  {
-    title: "Upside",
-    logo: "/logos/Upside.png",
-    ContentComponent: UpsideWTFProject,
-    color: "rgb(149, 255, 217)",
-  },
+  }
 ];
 
 export default projectData;
