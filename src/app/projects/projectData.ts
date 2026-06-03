@@ -2,7 +2,6 @@ import AmarnaiProject from "./AmarnaiProject";
 import RiskophobeProject from "./RiskophobeProject";
 import FlashstakeProject from "./FlashstakeProject";
 import ArturProject from "./ArturProject";
-import EpochIslandProject from "./EpochIslandProject";
 import RestifyProject from "./RestifyProject";
 import StargateProject from "./StargateProject";
 
@@ -51,12 +50,6 @@ const projectData: Project[] = [
     logo: "/logos/Flashstake.png",
     ContentComponent: FlashstakeProject,
     color: "#FE0094",
-  },
-  {
-    title: "EpochIsland",
-    logo: "/logos/Epoch.png",
-    ContentComponent: EpochIslandProject,
-    color: "#F1F1F1",
   },
   {
     title: "Artur.ai",
